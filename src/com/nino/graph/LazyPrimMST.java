@@ -18,7 +18,7 @@ public class LazyPrimMST<Weight extends Number & Comparable<Weight>> {
     // 存放最小生成树的边
     private Vector<Edge<Weight>> mst;
     // 最小生成树的权重
-    private Weight mstWeight;
+    private Number mstWeight;
 
     public LazyPrimMST(IWeightedGraph<Weight> graph) {
         this.graph = graph;
@@ -62,12 +62,13 @@ public class LazyPrimMST<Weight extends Number & Comparable<Weight>> {
     }
 
     public void showMst() {
+        System.out.println("Test LazyPrim MST: ");
         for (Edge<Weight> e : mst) {
             System.out.println(e.V() + " to " + e.W() + ": " + e.getWeight());
         }
     }
 
-    public Weight getMstWeight() {
+    public Number getMstWeight() {
         return mstWeight;
     }
 }
