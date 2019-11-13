@@ -5,7 +5,7 @@ package com.nino.graph;
  *
  * @Author Nino 2019/11/11
  */
-public interface IWeightedGraph<Weight extends Comparable<Weight>> {
+public interface IWeightedGraph<Weight extends Number & Comparable<Weight>> {
     // 获取顶点数
     int V();
     // 获取边数

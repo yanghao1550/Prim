@@ -3,7 +3,7 @@ package com.nino.graph;
 /**
  * @Author Nino 2019/11/11
  */
-public class Edge<Weight extends Comparable<Weight>> implements Comparable<Edge<Weight>> {
+public class Edge<Weight extends Number & Comparable<Weight>> implements Comparable<Edge<Weight>> {
     // 顶点v和顶点w
     private int v, w;
     // 权重

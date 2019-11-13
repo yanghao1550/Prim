@@ -5,7 +5,7 @@ import java.util.Vector;
 /**
  * @Author Nino 2019/11/11
  */
-public class DenseWeightedGraph<Weight extends Comparable<Weight>> implements IWeightedGraph<Weight> {
+public class DenseWeightedGraph<Weight extends Number & Comparable<Weight>> implements IWeightedGraph<Weight> {
     // 顶点数
     private int V;
     // 边数
