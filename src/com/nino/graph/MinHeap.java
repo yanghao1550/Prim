@@ -9,7 +9,7 @@ import java.util.Random;
  *
  * @Author Nino 2019/11/12
  */
-public class MinHeap<E extends Comparable> {
+public class MinHeap<E extends Comparable<E>> {
     // 堆的具体数据
     private E[] data;
     // 堆中的元素个数
